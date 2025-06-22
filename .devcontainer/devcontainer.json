@@ -14,7 +14,15 @@
     "5173": { "label": "SvelteKit", "onAutoForward": "openBrowser" }
   },
   "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/devcontainers/features/git-lfs:1": {}
-  }
+  // Full CPython 3.12 pre-built by the Dev Container team
+  "ghcr.io/devcontainers/features/python:1": {
+    "version": "3.12"
+  },
+  // Node 20.x (same mechanism; much faster than manual curl script)
+  "ghcr.io/devcontainers/features/node:1": {
+    "version": "20"
+  },
+  "ghcr.io/devcontainers/features/github-cli:1": {},
+  "ghcr.io/devcontainers/features/git-lfs:1": {}
+}
 }
