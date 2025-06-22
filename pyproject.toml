@@ -16,6 +16,15 @@ dependencies = [
 ]
 
 [tool.poetry]
+name = "obsidianos"
+version = "0.1.0"
+description = "Local markdown vault interface (FastAPI + SvelteKit)"
+readme = "README.md"
+# …
+packages = [
+  { include = "obsidianos", from = "src" }
+]
+
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.4.1"
